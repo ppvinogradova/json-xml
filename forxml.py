@@ -11,7 +11,7 @@ for item in items:
     texts = item.find('description').text
     texts_list.append(texts)
 for text in texts_list:
-    t = text.split(' ')
+    t = text.lower().split(' ')
     for word in t:
         if len(word) > 6:
             words.append(word)

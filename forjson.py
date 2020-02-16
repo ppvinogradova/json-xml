@@ -12,7 +12,7 @@ for item in news_data:
     description = item.get('description')
     texts.append(description)
 for text in texts:
-    t = text.split(' ')
+    t = text.lower().split(' ')
     for word in t:
         if len(word) > 6:
             words.append(word)
